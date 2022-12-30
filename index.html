@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>REGISTRATION FORM</h1>
+        <div class="left">
+            <div class="form">
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" placeholder="Enter name" name="name"><br>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" placeholder="Enter your Email-Id" required>
+
+                    <label for="phone">Contact No :</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                    <div class="gender">
+                        <label>Gender : </label>
+                        <input type="radio" name="mf" id="male" value="Male" class="gender">Male
+                        <input type="radio" name="mf" id="female" value="Female" class="gender">Female
+                    </div>
+                    <div class="skills">
+                        <label>Skills :</label>
+                        <input type="checkbox" value="Python" id="Python" class="checkbox">Python
+                        <input type="checkbox" value="C++" id="C++" class="checkbox">C++
+                        <input type="checkbox" value="HTML" id="HTML" class="checkbox">HTML
+                    </div>
+                    <div class="button">
+                        <button type="Submit" id="Submit"> Submit</button>
+                        <button type="reset" id="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="display">
+                <h2 font="bold">REGISTERED STUDENTS</h2>
+                <div class="basket" id="basket">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
